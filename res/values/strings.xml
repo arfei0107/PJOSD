@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<<<<<<< HEAD
     <string name="app_name">AOCI-PJ-OSD</string>
-=======
-    <string name="app_name">OSD-5</string>
->>>>>>> 53028ddafc1ec2666f7d107ded5d52657e6db877
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="frg1_PicAdj">Picture Adjust</string>
