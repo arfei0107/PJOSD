@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_func"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#000000" >
+    
+
+    <TextView
+        android:id="@+id/txtOffTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true" 
+        android:text="@string/FN_OffTimer"
+        android:textColor="#FFFFFF" />
+    
+    <TextView
+        android:id="@+id/txtNetwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtOffTimer"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/FN_Network"
+		android:textColor="#FFFFFF" />
+
+     <TextView
+        android:id="@+id/txtRemoteCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtNetwork"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/FN_RemoteCode"
+		android:textColor="#FFFFFF" />
+     
+     <TextView
+        android:id="@+id/txtLampReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtRemoteCode"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/FN_LampReset"
+		android:textColor="#FFFFFF" />
+
+    
+</RelativeLayout>

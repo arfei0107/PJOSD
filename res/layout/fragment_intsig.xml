@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_intsig"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#000000" >
+    
+	<TextView
+	        android:id="@+id/txtInputLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="6dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_centerInParent="true" 
+	        android:text="@string/IS_InputLevel"
+	        android:textColor="#FFFFFF" />
+	<Spinner
+		android:id="@+id/spinInputLevel"
+		android:layout_width="130dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/txtInputLevel"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="28dp" />
+	
+	
+	<TextView
+        android:id="@+id/txtColorSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtInputLevel"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IS_ColorSpace"
+		android:textColor="#FFFFFF" />
+
+	<TextView
+        android:id="@+id/txtHide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtColorSpace"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IS_Hide"
+		android:textColor="#FFFFFF" />
+
+	<TextView
+        android:id="@+id/txtMask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtHide"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IS_Mask"
+		android:textColor="#FFFFFF" />
+
+	<TextView
+        android:id="@+id/txtPicturePosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtMask"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IS_PicturePosition"
+		android:textColor="#FFFFFF" />	
+		
+</RelativeLayout>

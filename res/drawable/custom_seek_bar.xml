@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@android:id/background"
+		android:drawable="@drawable/base_slider_off" />
+	<item
+        android:id="@android:id/secondaryProgress"
+        android:drawable="@drawable/base_slider_off"/>
+	<item
+		android:id="@android:id/progress"
+		android:drawable="@drawable/base_slider_on"/>
+	
+</layer-list>
+
+
+<!-- 
+<layer-list
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@android:id/background">
+		<shape>
+			<corners
+				android:radius="3dip" />
+			<gradient
+				android:startColor="#ffffffff"
+				android:centerColor="#ffdddddd"
+				android:centerY="0.50"
+				android:endColor="#ffffffff"
+				android:angle="270" />
+			<padding 
+				android:left="7.0dip"  
+        		android:right="7.0dip"  />
+		</shape>
+	</item>
+	
+	
+	<item
+		android:id="@android:id/progress">
+		<clip>
+			<shape>
+				<corners
+					android:radius="5dip" />
+				<gradient
+					android:startColor="#ff0e75af"
+					android:endColor="#ff1997e1"
+					android:angle="90" />
+				<padding 
+				    android:left="7.0dip"  
+        			android:right="7.0dip"  />
+			</shape>
+		</clip>
+	</item>
+</layer-list>
+
+ -->
