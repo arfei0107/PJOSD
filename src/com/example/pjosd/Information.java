@@ -46,7 +46,6 @@ public class Information extends Fragment implements onReplyData {
 	public TextView tvPSVerVal;
 	public TextView tvUnitID;
 	public TextView tvUnitIDVal;
-	public TextView tvTest;
 
 	//== Declare Interface that Implement in MainActivity Class ==//
 	public interface IF_onSendCmdListener {
@@ -87,9 +86,6 @@ public class Information extends Fragment implements onReplyData {
 		/* Input Port */
 		//Log.e(TAG, "Send Information - Input Port Command!");
 		view = inflater.inflate(R.layout.fragment_info, container, false);
-		
-		tvTest = (TextView) view.findViewById(R.id.textView1);
-		
 		tvInput = (TextView) view.findViewById(R.id.Input);
 		tvInputVal = (TextView) view.findViewById(R.id.InputVal);
 		//-- Input
