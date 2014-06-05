@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_install"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    
+	
+	<TextView
+	        android:id="@+id/txtLensControl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="6dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_centerInParent="true" 
+	        android:text="@string/IT_LensControl"
+	        android:textColor="#FFFFFF" />
+	
+	<TextView
+        android:id="@+id/txtPixelAdjust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtLensControl"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IT_PixelAdjust"
+		android:textColor="#FFFFFF" />
+
+	
+	<TextView
+        android:id="@+id/txtInstallationStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtPixelAdjust"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IT_InstallationStyle"
+		android:textColor="#FFFFFF" />
+
+	<TextView
+        android:id="@+id/txtHighAltitudeMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtInstallationStyle"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IT_HighAltitudeMode"
+		android:textColor="#FFFFFF" />
+	
+</RelativeLayout>

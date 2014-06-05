@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_picadj"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"     
+    android:background="#505050"
+    android:orientation="vertical">
+
+ <!-- ============================================================= -->
+ 
+    <TextView
+        android:id="@+id/txtPicMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true" 
+        android:text="@string/PA_PicMode"
+        android:textColor="#FFFFFF" />
+    <Spinner
+		android:id="@+id/spinPicMode"
+		android:layout_width="130dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/txtPicMode"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="28dp" 
+        android:textColor="#87CEFA"/>
+
+	
+    
+ <!-- ============================================================= -->
+    <!-- Contrast TextView -->
+    <TextView
+        android:id="@+id/txtContrast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtPicMode"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/PA_Contrast"
+		android:textColor="#FFFFFF" />
+	
+	<!-- Contrast SeekBar Value -->
+    <TextView 
+        android:id="@+id/txtContVal"
+        android:layout_width="10dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/txtContrast"
+        android:layout_below="@id/txtPicMode"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="168dp"
+        android:ems="3"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:maxLength="3"
+        android:background="#222222"
+        android:textColor="#FFFFFF"/>
+    	<!-- 
+    	android:text="50"
+    	 -->	
+    
+    
+    <!-- Contrast SeekBar -->
+    <SeekBar
+        android:id="@+id/sekbarContrast"
+        android:layout_width="50px"
+        android:layout_height="25px"
+        android:layout_below="@+id/txtPicMode"
+        android:layout_toRightOf="@+id/txtContrast"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="90dp"
+        android:paddingRight="28dp" 
+        android:progressDrawable="@drawable/custom_seek_bar" 
+    	android:thumb="@drawable/seek_bar_thumb"
+        />
+    
+
+       <!-- 
+               android:progressDrawable="@drawable/custom_progress_bar_horizontal" 
+    	android:thumb="@drawable/seek_bar_thumb" 
+       android:max="100"
+       android:progress="50" 
+       -->  
+    
+ <!-- ============================================================= -->
+    
+    <!-- Brightness TextView -->
+    <TextView
+        android:id="@+id/txtBrightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtContrast"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/PA_Brightness"
+		android:textColor="#FFFFFF" />
+    
+	<!-- Brightness SeekBar Value -->
+    <TextView 
+        android:id="@+id/txtBrightVal"
+        android:layout_width="10dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/txtBrightness"
+        android:layout_below="@id/txtContVal"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="168dp"
+        android:text="50"
+        android:ems="3"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:maxLength="3"
+        android:background="#222222"
+        android:textColor="#FFFFFF"/>
+   
+    <SeekBar
+        android:id="@+id/sekbarBright"
+        android:layout_width="95px"
+        android:layout_height="25px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtPicMode"
+        android:layout_toRightOf="@id/txtBrightness"
+        android:layout_marginTop="39dp"
+        android:layout_marginLeft="76dp"
+        android:paddingRight="28dp" 
+        android:progressDrawable="@drawable/custom_seek_bar" 
+    	android:thumb="@drawable/seek_bar_thumb"/>
+ <!-- ============================================================= -->
+    
+	<!-- Color TextView -->
+    <TextView
+        android:id="@+id/txtColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtBrightness"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true"
+		android:text="@string/PA_Color"
+		android:textColor="#FFFFFF" />	
+    
+	<!-- Color SeekBar Value -->
+    <TextView 
+        android:id="@+id/txtColorVal"
+        android:layout_width="10dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/txtColor"
+        android:layout_below="@id/txtBrightVal"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="168dp"
+        android:text="50"
+        android:ems="3"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:maxLength="3"
+        android:background="#222222"
+        android:textColor="#FFFFFF"/>
+
+	<SeekBar
+        android:id="@+id/sekbarColor"
+        android:layout_width="95px"
+        android:layout_height="25px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtPicMode"
+        android:layout_toRightOf="@id/txtColor"
+        android:layout_marginTop="71dp"
+        android:layout_marginLeft="113dp"
+        android:paddingRight="28dp" 
+        android:progressDrawable="@drawable/custom_seek_bar" 
+    	android:thumb="@drawable/seek_bar_thumb"/>
+    
+<!-- ============================================================= -->
+    
+    <!-- Tint TextView -->
+    <TextView
+        android:id="@+id/txtTint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtColor"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/PA_Tint"
+		android:textColor="#FFFFFF" /> 
+
+	<!-- Tint SeekBar Value -->
+    <TextView 
+        android:id="@+id/txtTintVal"
+        android:layout_width="10dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/txtTint"
+        android:layout_below="@id/txtColorVal"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="168dp"
+        android:text="50"
+        android:ems="3"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:maxLength="3"
+        android:background="#222222"
+        android:textColor="#FFFFFF"/>	
+    
+	<SeekBar
+        android:id="@+id/sekbarTint"
+        android:layout_width="95px"
+        android:layout_height="25px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtPicMode"
+        android:layout_toRightOf="@id/txtTint"
+        android:layout_marginTop="103dp"
+        android:layout_marginLeft="121dp"
+        android:paddingRight="28dp" 
+        android:progressDrawable="@drawable/custom_seek_bar" 
+    	android:thumb="@drawable/seek_bar_thumb"/>
+    
+<!-- ============================================================= -->
+
+
+    <TextView
+        android:id="@+id/txtColorTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtTint"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/PA_ColorTemp"
+		android:textColor="#FFFFFF" />
+    
+    <Spinner
+		android:id="@+id/spinColTemp"
+		android:layout_width="130dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sekbarTint"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="28dp" />
+    
+<!-- ============================================================= -->
+    
+    <TextView
+        android:id="@+id/txtGamma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtColorTemp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/PA_Gamma" 
+		android:textColor="#FFFFFF" /> 
+		
+    
+    
+    <Spinner
+		android:id="@+id/spinGamma"
+		android:layout_width="130dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/spinColTemp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="28dp" />
+
+<!-- ============================================================= -->
+    
+    <TextView
+        android:id="@+id/txtAdvanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtGamma"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/PA_Advanced" 
+		android:textColor="#FFFFFF" /> 
+
+    
+<!-- ============================================================= -->
+    
+    <TextView
+        android:id="@+id/txtLensAperture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtAdvanced"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/PA_LensApeture" 
+		android:textColor="#FFFFFF" />
+
+<!-- ============================================================= -->
+    
+
+</RelativeLayout>

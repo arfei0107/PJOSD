@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#000000" >
+
+    
+    <TextView
+        android:id="@+id/Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true" 
+        android:text="@string/IF_Input"
+        android:textColor="#FFFFFF" />
+    
+    <TextView
+        android:id="@+id/InputVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/Input"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="120dp"
+        android:gravity="right"
+        android:textColor="#87CEFA" />  <!-- RGB(135,206,250) -->
+    
+    <TextView
+        android:id="@+id/Source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/Input"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IF_Source"
+		android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/SourceVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/Source"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="120dp"
+        android:gravity="left"
+        android:textColor="#87CEFA" />  <!-- RGB(135,206,250) -->
+
+    <TextView
+        android:id="@+id/DeppColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/Source"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IF_DeepColor"
+		android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/DeppColorVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/DeppColor"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="120dp"
+        android:gravity="left"
+        android:textColor="#87CEFA" />  <!-- RGB(135,206,250) -->
+
+    
+    <TextView
+        android:id="@+id/LampTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/DeppColor"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IF_LampTime"
+		android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/LampTimeVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/LampTime"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="120dp"
+        android:gravity="left"
+        android:textColor="#87CEFA" />  <!-- RGB(135,206,250) -->
+    
+    <TextView
+        android:id="@+id/SoftVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/LampTime"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IF_SoftVer"
+		android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/SoftVerVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/SoftVer"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="120dp"
+        android:gravity="left"
+        android:textColor="#87CEFA" />  <!-- RGB(135,206,250) -->
+    
+    
+     <TextView
+        android:id="@+id/PSVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/SoftVer"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IF_PSVer"
+		android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/PSVerVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/PSVer"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="120dp"
+        android:gravity="left"
+        android:textColor="#87CEFA" />  <!-- RGB(135,206,250) -->
+     
+     <TextView
+        android:id="@+id/UnitID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/PSVer"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" 
+		android:text="@string/IF_UnitID"
+		android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/UnitIDVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/UnitID"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="120dp"
+        android:gravity="left"
+        android:textColor="#87CEFA" />  <!-- RGB(135,206,250) -->
+     
+     
+ <!-- 
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:text="@string/str_butConnect" />
+
+    <Button
+        android:id="@+id/btnDisconnect"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:text="@string/str_butDisconnect" />
+ -->
+ 
+</RelativeLayout>
